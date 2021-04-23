@@ -13,17 +13,17 @@ function App() {
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
-      <Switch>
-        <Route path="/login">
-          <Logign></Logign>
-        </Route>
-        <Route exact path="/">
-          <Logign></Logign>
-        </Route>
-        <Route path="*">
-          <NotFound></NotFound>
-        </Route>
-      </Switch>
+        <Switch>
+          <Route path="/login">
+            <Logign></Logign>
+          </Route>
+          <Route exact path="/">
+            <Logign></Logign>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
       </Router>
     </UserContext.Provider>
   );
